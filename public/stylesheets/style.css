@@ -1,0 +1,56 @@
+html, body{
+  background-color: black;
+  color: white;
+}
+
+body {
+  padding: 50px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a {
+  color: #00B7FF;
+}
+
+.sidebar{
+  width: 200px;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+form{
+  max-width: 500px;
+}
+
+.sidebar-nav li{
+  margin-top: 5px;
+}
+
+.genreLabel{
+  margin-left: 5px;
+}
+
+a, a:hover, a:visited{
+  color: blue;
+  text-decoration: inherit;
+}
+
+
+@media screen and (max-width:  600px) {
+  .row{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    font-size: 20px;
+  }
+}
