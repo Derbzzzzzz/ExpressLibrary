@@ -11,31 +11,65 @@ html(lang='en')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div(class='container-fluid')
-      div(class='row')
-        div(class='sidebar')
-          block sidebar
-            ul(class='sidebar-nav')
-              li
-                a(href='/catalog') Home
-              li
-                a(href='/catalog/books') All books
-              li
-                a(href='/catalog/authors') All authors
-              li
-                a(href='/catalog/genres') All genres
-              li
-                a(href='/catalog/bookinstances') All book-instances
-              li
-                hr
-              li
-                a(href='/catalog/author/create') Create new author
-              li
-                a(href='/catalog/genre/create') Create new genre
-              li
-                a(href='/catalog/book/create') Create new book
-              li
-                a(href='/catalog/bookinstance/create') Create new book instance (copy)
+      nav(class = "navbar navbar-expand-lg navbar-dark bg-dark")
+        a(class="navbar-brand" href="/catalog") Express Library
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+          span(class="navbar-toggler-icon")
+        div(class="collapse navbar-collapse" id="navbarSupportedContent")
+          ul(class="navbar-nav mr-auto")
+            li.nav-item
+              a.nav-link(href='/catalog') Home
+            li.nav-item
+              a.nav-link(href='/catalog/books') Books
+            li.nav-item
+              a.nav-link(href='/catalog/authors') Authors
+            li.nav-item
+              a.nav-link(href='/catalog/genres') Genres
+            li.nav-item
+              a.nav-link(href='/catalog/bookinstances') Book Instances
+            li.nav-item.dropdown
+              a( id = "navbarDarkDropdown" class = "nav-link dropdown-toggle" href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Dropdown
+              ul( class = "dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby='navbarDarkDropdown')
+                li
+                  a.dropdown-item(href='/catalog/book/create') Create Book
+                li
+                  .dropdown-divider
+                li
+                  a.dropdown-item(href='/catalog/author/create') Create Author
+                li
+                  .dropdown-divider
+                li
+                  a.dropdown-item(href='/catalog/genre/create') Create Genre
+                li
+                  .dropdown-divider
+                li
+                  a.dropdown-item(href='/catalog/bookinstance/create') Create Book Instance
 
-        div(class='main')
-          block content
+          
+          
+      //- div(class='sidebar')
+      //-   block sidebar
+      //-     ul(class='sidebar-nav')
+      //-       li
+      //-         a(href='/catalog') Home
+      //-       li
+      //-         a(href='/catalog/books') All books
+      //-       li
+      //-         a(href='/catalog/authors') All authors
+      //-       li
+      //-         a(href='/catalog/genres') All genres
+      //-       li
+      //-         a(href='/catalog/bookinstances') All book-instances
+      //-       li
+      //-         hr
+      //-       li
+      //-         a(href='/catalog/author/create') Create new author
+      //-       li
+      //-         a(href='/catalog/genre/create') Create new genre
+      //-       li
+      //-         a(href='/catalog/book/create') Create new book
+      //-       li
+      //-         a(href='/catalog/bookinstance/create') Create new book instance (copy)
+      div(class='main')
+        block content
 

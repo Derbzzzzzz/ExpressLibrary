@@ -1,15 +1,20 @@
 html, body{
-  background-color: black;
+  margin: 0px;
+  background-color: rgb(0,0,0);
   color: white;
 }
 
 body {
-  padding: 50px;
+  padding: 30px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 a {
-  color: #00B7FF;
+  color: inherit
+}
+
+nav{
+  margin-bottom: 20px;
 }
 
 .sidebar{
@@ -17,6 +22,23 @@ a {
   font-size: 1.2rem;
 }
 
+.dropdown-menu-dark {
+  color: inherit;
+  background-color: #343a40;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: rgba(255,255,255,.5);
+}
+
+.dropdown-menu-dark .dropdown-item:hover, .dropdown-menu-dark .dropdown-item:focus {
+  color: rgba(255,255,255,.75);
+  background-color: inherit;
+}
+.dropdown-menu-dark .dropdown-divider {
+  border-color: rgba(0, 0, 0, 0.15);
+}
 .sidebar-nav {
   margin-top: 20px;
   padding: 0;
