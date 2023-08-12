@@ -1,6 +1,6 @@
 html, body{
   margin: 0px;
-  background-color: rgb(0,0,0);
+  background-color: rgb(40,40,40);
   color: white;
 }
 
@@ -9,12 +9,25 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-a {
-  color: inherit
-}
-
 nav{
   margin-bottom: 20px;
+}
+
+nav a{
+  color: white !important;
+}
+
+a {
+  color: rgb(83, 174, 235) !important;
+}
+
+.card{
+  margin-bottom: 5px;
+}
+
+.card-body{
+  padding: 10px;
+  padding-left: 20px;
 }
 
 .sidebar{
@@ -39,6 +52,7 @@ nav{
 .dropdown-menu-dark .dropdown-divider {
   border-color: rgba(0, 0, 0, 0.15);
 }
+
 .sidebar-nav {
   margin-top: 20px;
   padding: 0;

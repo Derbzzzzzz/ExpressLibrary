@@ -3,11 +3,15 @@ extends layout
 block content
   h1= title
 
-  ul
+  div
     each book in book_list
-      li
-        a(href=book.url) #{book.title}
-        |  (#{book.author.name})
+        div.card.bg-dark.text-white
+          div.card-body
+            a(href=book.url)
+              h5.card-title.text-white #{book.title}
+            h6.card-subtitle <small>by</small>
+              span 
+                a.text-white(href=book.author.url) #{book.author.name}
 
     else
       li There are no books.

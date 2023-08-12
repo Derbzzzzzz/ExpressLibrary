@@ -3,10 +3,12 @@ extends layout
 block content
   h1= title
 
-  ul
+  div
     each genre in genre_list
-      li
-        a(href=genre.url) #{genre.name}
+      div.card.bg-dark
+            div.card-body
+              a(href=genre.url)
+                h5.text-white.m-0 #{genre.name}
 
     else
       li There are no genres.

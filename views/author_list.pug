@@ -3,11 +3,14 @@ extends layout
 block content
   h1= title
 
-  ul
+  div
     each author in author_list
-      li
-        a(href=author.url) #{author.name}
-        |  (#{author.lifespan})
-
+      div.card.bg-dark
+          div.card-body
+            a(href=author.url)
+              h5.card-title.text-white #{author.name}
+            h6.card-subtitle #{author.lifespan}
+      
+    
     else
       li There are no authors.
