@@ -5,13 +5,13 @@ block content
 
   div
     each book in book_list
-        div.card.bg-dark.text-white
+        div.card.bg-dark
           div.card-body
             a(href=book.url)
-              h5.card-title.text-white #{book.title}
+              h5.card-title #{book.title}
             h6.card-subtitle <small>by</small>
               span 
-                a.text-white(href=book.author.url) #{book.author.name}
+                a(href=book.author.url) #{book.author.name}
 
     else
       li There are no books.

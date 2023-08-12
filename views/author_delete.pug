@@ -8,15 +8,18 @@ block content
 
     div #[strong Delete the following books before attempting to delete this author.]
 
-    div(style='margin-left:20px;margin-top:20px')
+    div(style='margin-top:20px')
 
       h4 Books
 
-      dl
+      
       each book in author_books
-        dt
-          a(href=book.url) #{book.title}
-        dd #{book.summary}
+        div.card.bg-dark
+          div.card-body
+            a(href=book.url)
+              h5.card-title #{book.title}
+            h6.card-subtitle
+              span #{book.summary}
 
   else
     p Do you really want to delete this Author?

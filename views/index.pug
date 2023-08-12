@@ -8,9 +8,19 @@ block content
 
   p The library has the following record counts:
 
-  ul
-    li #[strong Books:] !{book_count}
-    li #[strong Copies:] !{book_instance_count}
-    li #[strong Copies available:] !{book_instance_available_count}
-    li #[strong Authors:] !{author_count}
-    li #[strong Genres:] !{genre_count}
+  div
+    div.card.bg-dark
+      div.card-body
+        h5.card-title.m-0 Books: !{book_count}
+    div.card.bg-dark
+      div.card-body
+        h5.card-title.m-0 Copies: !{book_instance_count}
+    div.card.bg-dark
+      div.card-body
+        h5.card-title.m-0 Copies Available: !{book_instance_available_count}
+    div.card.bg-dark
+      div.card-body
+        h5.card-title.m-0 Authors: !{author_count}
+    div.card.bg-dark
+      div.card-body
+        h5.card-title.m-0 Genres: !{genre_count}

@@ -8,7 +8,7 @@ block content
       div.card.bg-dark
           div.card-body
             a(href=val.url)
-              h5.card-title.text-white #{val.book.title} : #{val.imprint}
+              h5.card-title #{val.book.title} : #{val.imprint}
             h6.card-subtitle
               if val.status=='Available'
                 span.text-success #{val.status}

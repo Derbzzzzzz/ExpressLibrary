@@ -56,6 +56,8 @@ exports.book_list = asyncHandler(async (req, res, next) => {
       err.status = 404;
       return next(err);
     }
+
+    console.log(book.title)
   
     res.render("book_detail", {
       title: book.title,
